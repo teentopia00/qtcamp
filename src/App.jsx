@@ -130,9 +130,9 @@ export default function App() {
           </a>
         </Section>
 
-        <Section id="facility" eyebrow="3. 교회시설 사용안내" title="소그룹 공간안내">
+        <Section id="facility" eyebrow="3. 교회시설 사용안내" title="열쇠 및 소그룹 공간안내">
           <div className="rounded-card bg-camp-sky p-4">
-            <h3 className="text-2xl font-black">열쇠 사용</h3>
+            <h3 className="text-2xl font-black">열쇠위치</h3>
             <div className="mt-4 flex flex-col gap-3">
               {keyGuide.map((item) => (
                 <div key={item.title} className="rounded-card bg-white p-4">
