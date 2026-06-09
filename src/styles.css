@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    font-family:
+      Pretendard,
+      'Apple SD Gothic Neo',
+      'Noto Sans KR',
+      system-ui,
+      sans-serif;
+  }
+
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer utilities {
+  .rounded-card {
+    border-radius: 8px;
+  }
+
+  .camp-pattern {
+    background:
+      linear-gradient(135deg, rgba(254, 215, 170, 0.68), rgba(217, 249, 157, 0.42)),
+      radial-gradient(circle at 20% 15%, rgba(239, 111, 97, 0.16), transparent 24%),
+      radial-gradient(circle at 88% 30%, rgba(40, 113, 87, 0.12), transparent 26%);
+  }
+}
