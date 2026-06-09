@@ -23,15 +23,15 @@ export const keyGuide = [
 
 export const facilityGuide = [
   {
-    floor: '1층',
+    floor: '1층 소그룹 장소',
     rooms: ['쿰바야 룸', '지하 기도실', '1층 실내', '사무실', '부엌', '화장실'],
   },
   {
-    floor: '교육관',
+    floor: '교육관 소그룹 장소',
     rooms: ['교육관 2층', '교육관 다락', '교육관 게스트룸(다락)'],
   },
   {
-    floor: '본당',
+    floor: '본당 소그룹 장소',
     rooms: ['본당', '본당 뒤쪽 미니카페', '본당 중3층 유아실'],
   },
 ]
