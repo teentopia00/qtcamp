@@ -56,7 +56,7 @@ function ExternalButton({ href }) {
       rel="noreferrer"
       className="inline-flex min-h-12 items-center justify-center rounded-card bg-camp-leaf px-4 text-lg font-black text-white shadow-sm transition active:scale-[0.98]"
     >
-      지도 열기
+      네이버 지도열기
     </a>
   )
 }
@@ -126,11 +126,11 @@ export default function App() {
             rel="noreferrer"
             className="inline-flex min-h-14 w-full items-center justify-center rounded-card bg-camp-coral px-5 text-xl font-black text-white shadow-sm transition active:scale-[0.98]"
           >
-            교회 정보 열기
+            교회 홈페이지 열기
           </a>
         </Section>
 
-        <Section id="facility" eyebrow="3. 교회시설 사용안내" title="열쇠와 공간 안내">
+        <Section id="facility" eyebrow="3. 교회시설 사용안내" title="소그룹 공간안내">
           <div className="rounded-card bg-camp-sky p-4">
             <h3 className="text-2xl font-black">열쇠 사용</h3>
             <div className="mt-4 flex flex-col gap-3">
