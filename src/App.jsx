@@ -64,7 +64,7 @@ function ExternalButton({ href }) {
 export default function App() {
   return (
     <div className="min-h-screen bg-camp-cream text-camp-ink">
-      <header className="relative overflow-hidden bg-white">
+      <header id="top-menu" className="relative overflow-hidden bg-white">
         <div className="absolute inset-0 camp-pattern" aria-hidden="true" />
         <div className="relative mx-auto flex max-w-3xl flex-col gap-6 px-5 pb-8 pt-7">
           <div className="inline-flex w-fit rounded-full bg-camp-mint px-4 py-2 text-base font-black text-camp-leaf">
@@ -124,7 +124,7 @@ export default function App() {
             rel="noreferrer"
             className="mt-5 inline-flex min-h-14 w-full items-center justify-center rounded-card bg-camp-coral px-5 text-xl font-black text-white shadow-sm transition active:scale-[0.98]"
           >
-            교회 홈페이지 열기
+            교회 정보 열기
           </a>
         </Section>
 
@@ -221,19 +221,14 @@ export default function App() {
       </main>
 
       <div className="fixed inset-x-0 bottom-0 z-20 border-t border-amber-200 bg-white/95 px-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 shadow-[0_-10px_30px_rgba(95,63,32,0.12)] backdrop-blur min-[390px]:px-4">
-        <div className="mx-auto grid max-w-3xl grid-cols-2 gap-3">
-          <a
-            href="tel:01041709140"
-            className="flex min-h-14 items-center justify-center rounded-card bg-camp-coral px-2 text-center text-base font-black leading-snug text-white min-[390px]:px-3 min-[390px]:text-lg"
+        <div className="mx-auto max-w-3xl">
+          <button
+            type="button"
+            onClick={() => scrollToSection('top-menu')}
+            className="flex min-h-14 w-full items-center justify-center rounded-card bg-camp-leaf px-4 text-center text-xl font-black leading-snug text-white"
           >
-            차량·방송 문의
-          </a>
-          <a
-            href="tel:01041548875"
-            className="flex min-h-14 items-center justify-center rounded-card bg-camp-leaf px-2 text-center text-base font-black leading-snug text-white min-[390px]:px-3 min-[390px]:text-lg"
-          >
-            부엌·청소 문의
-          </a>
+            메뉴로 돌아가기
+          </button>
         </div>
       </div>
     </div>
