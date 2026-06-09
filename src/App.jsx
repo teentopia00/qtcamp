@@ -32,7 +32,7 @@ function scrollToSection(id) {
 
 function Section({ id, eyebrow, title, children }) {
   return (
-    <section id={id} className="scroll-mt-24 rounded-card bg-white/95 p-5 shadow-soft ring-1 ring-amber-100">
+    <section id={id} className="scroll-mt-24 rounded-card bg-white/95 p-4 shadow-soft ring-1 ring-amber-100 min-[390px]:p-5">
       <p className="text-base font-bold text-camp-coral">{eyebrow}</p>
       <h2 className="mt-1 text-2xl font-black text-camp-ink">{title}</h2>
       <div className="mt-5">{children}</div>
@@ -72,22 +72,22 @@ export default function App() {
           </div>
           <div>
             <p className="text-xl font-black text-camp-coral">우리들 교회 × 부산진성결교회</p>
-            <h1 className="mt-2 text-4xl font-black leading-tight tracking-normal text-camp-ink sm:text-5xl">
+            <h1 className="mt-2 break-keep text-[2rem] font-black leading-tight tracking-normal text-camp-ink min-[390px]:text-4xl sm:text-5xl">
               {churchInfo.eventName}
             </h1>
             <p className="mt-4 text-xl font-bold leading-relaxed text-stone-700">
               {churchInfo.welcome}
             </p>
           </div>
-          <nav className="grid grid-cols-2 gap-3" aria-label="주요 메뉴">
+          <nav className="grid grid-cols-2 gap-2 min-[390px]:gap-3" aria-label="주요 메뉴">
             {menuItems.map((item) => (
               <button
                 key={item.id}
                 type="button"
                 onClick={() => scrollToSection(item.id)}
-                className="min-h-24 rounded-card bg-white p-4 text-left shadow-soft ring-1 ring-amber-100 transition active:scale-[0.98]"
+                className="min-h-24 rounded-card bg-white p-3 text-left shadow-soft ring-1 ring-amber-100 transition active:scale-[0.98] min-[390px]:p-4"
               >
-                <span className="block text-xl font-black text-camp-ink">{item.label}</span>
+                <span className="block break-keep text-[1.2rem] font-black leading-snug text-camp-ink min-[390px]:text-xl">{item.label}</span>
                 <span className="mt-1 block text-base font-bold text-camp-leaf">{item.hint}</span>
               </button>
             ))}
@@ -95,7 +95,7 @@ export default function App() {
         </div>
       </header>
 
-      <main className="mx-auto flex max-w-3xl flex-col gap-5 px-5 pb-28 pt-5">
+      <main className="mx-auto flex max-w-3xl flex-col gap-5 px-4 pb-32 pt-5 min-[390px]:px-5">
         <Section id="schedule" eyebrow="1. 오늘 일정" title="캠프 전체 일정">
           <div className="flex flex-col gap-4">
             {schedule.map((day) => (
@@ -220,17 +220,17 @@ export default function App() {
         </Section>
       </main>
 
-      <div className="fixed inset-x-0 bottom-0 z-20 border-t border-amber-200 bg-white/95 px-4 py-3 shadow-[0_-10px_30px_rgba(95,63,32,0.12)] backdrop-blur">
+      <div className="fixed inset-x-0 bottom-0 z-20 border-t border-amber-200 bg-white/95 px-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] pt-3 shadow-[0_-10px_30px_rgba(95,63,32,0.12)] backdrop-blur min-[390px]:px-4">
         <div className="mx-auto grid max-w-3xl grid-cols-2 gap-3">
           <a
             href="tel:01041709140"
-            className="flex min-h-14 items-center justify-center rounded-card bg-camp-coral px-3 text-lg font-black text-white"
+            className="flex min-h-14 items-center justify-center rounded-card bg-camp-coral px-2 text-center text-base font-black leading-snug text-white min-[390px]:px-3 min-[390px]:text-lg"
           >
             차량·방송 문의
           </a>
           <a
             href="tel:01041548875"
-            className="flex min-h-14 items-center justify-center rounded-card bg-camp-leaf px-3 text-lg font-black text-white"
+            className="flex min-h-14 items-center justify-center rounded-card bg-camp-leaf px-2 text-center text-base font-black leading-snug text-white min-[390px]:px-3 min-[390px]:text-lg"
           >
             부엌·청소 문의
           </a>
