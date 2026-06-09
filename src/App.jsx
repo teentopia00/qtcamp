@@ -117,12 +117,14 @@ export default function App() {
         </Section>
 
         <Section id="church" eyebrow="2. 교회소개" title={churchInfo.name}>
-          <p className="text-xl font-bold leading-relaxed text-stone-700">{churchInfo.description}</p>
+          {churchInfo.description ? (
+            <p className="text-xl font-bold leading-relaxed text-stone-700">{churchInfo.description}</p>
+          ) : null}
           <a
             href={churchInfo.homepage}
             target="_blank"
             rel="noreferrer"
-            className="mt-5 inline-flex min-h-14 w-full items-center justify-center rounded-card bg-camp-coral px-5 text-xl font-black text-white shadow-sm transition active:scale-[0.98]"
+            className="inline-flex min-h-14 w-full items-center justify-center rounded-card bg-camp-coral px-5 text-xl font-black text-white shadow-sm transition active:scale-[0.98]"
           >
             교회 정보 열기
           </a>
