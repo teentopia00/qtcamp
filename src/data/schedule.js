@@ -18,7 +18,7 @@ export const schedule = [
       { time: '오후 12:00', title: '점심' },
       { time: '오후 2:00', title: '진과 함께하는 전도' },
       { time: '오후 3:30', title: '특강: 갈등관리 리더십' },
-      { time: '오후 7:30', title: '저녁 큐티 집회' },
+      { time: '오후 7:00', title: '저녁 큐티 집회' },
     ],
   },
   {
